@@ -1,0 +1,129 @@
+
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      p {
+        font-size: 1.3em;
+      }
+
+      h1 {
+        border-radius: 12px;
+        font-weight: 700;
+        padding: 10px;
+        color: beige;
+        font-size: 3em;
+      }
+
+      .container {
+        background: black;
+        padding: 10% 8%;
+        display: flex;
+        height: 100vh;
+      }
+
+      .btn-box {
+        display: flex;
+      }
+      .img-sec,
+      .content {
+        width: 50%;
+      }
+      .img-sec {
+        margin-top: 10%;
+      }
+      .img-sec img {
+        max-width: 100%;
+      }
+
+      .btn {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border-radius: 12px;
+        border: none;
+
+        background: #2b58fa;
+        color: white;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+      }
+
+      .gradient {
+        background: linear-gradient(
+          328deg,
+          #2bfac4,
+          #2bd7fa,
+          #2baafa,
+          #2b58fa,
+          #6c2bfa,
+          #a32bfa,
+          purple
+        );
+        background-size: 1200% 1200%;
+        animation: moveIt 6s ease infinite;
+      }
+
+      @-webkit-keyframes moveIt {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @-moz-keyframes moveIt {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes moveIt {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 5% 5%;
+          flex-direction: column;
+          height: max-content;
+        }
+
+        .img-sec,
+        .content {
+          margin: 20px;
+          width: 100%;
+        }
+
+        .img-sec img {
+          max-width: 100%;
+        }
+
+        .btn-box {
+          flex-direction: column;
+        }
+
+        .btn {
+          margin-bottom: 10px;
+        }
+      }
